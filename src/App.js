@@ -19,12 +19,12 @@ function App() {
      <Router>
      <Top/>
      <Routes>
-     <Route path="/home"  element={<Home/>}/>
-     <Route path="/tourism"  element={<Tourism/>}/>
-     <Route path="/fitness"  element={<Fitness/>}/>
-     <Route path="/technology"  element={<Technology/>}/>
-     <Route path="/food"  element={<Food/>}/>
-     <Route path="/article/:id" element={<Article/>} />
+     <Route exact path="/"  element={<Home/>}/>
+     <Route exact path="/tourism"  element={<Tourism/>}/>
+     <Route exact path="/fitness"  element={<Fitness/>}/>
+     <Route exact path="/technology"  element={<Technology/>}/>
+     <Route exact path="/food"  element={<Food/>}/>
+     <Route exact path="/article/:id" element={<Article/>} />
     
      </Routes>
      </Router>

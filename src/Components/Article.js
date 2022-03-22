@@ -10,16 +10,16 @@ const Article = () => {
     const arr =  window.location.href.split("/")
     const id = arr[arr.length - 1]
     console.log(id)
-    const articles = data.filter(item => {
+    // = []
+    const filteredData = data.filter(item => {
       return item.id === id;
     })
-    console.log(articles[0])
   return (
     <div>
-        <h1 className='heading' >{articles[0].name}</h1>
-        <div className='div_article[0]' style={{ backgroundImage: "url(" + `${articles[0].img}` + ")"}}>
+        <h1 className='heading' >{filteredData[0].name}</h1>
+        <div className='div_article' style={{ backgroundImage: "url(" + `${filteredData[0].img}` + ")"}}>
         </div>
-        <div className='article[0]-about'>{articles[0].about}</div>
+        <div className='article-about'>{filteredData[0].about}</div>
     </div>
   )
 }
