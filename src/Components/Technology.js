@@ -1,7 +1,7 @@
 import React,{useContext} from 'react';
 import DataContext from '../Context/DataContext';
 import { Link } from 'react-router-dom';
-import "../ComponentCss/Technology.css";
+import "../ComponentCss/Common.css";
 
 
 const Technology=()=> {
