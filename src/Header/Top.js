@@ -10,7 +10,7 @@ export default function Top() {
     <nav>
       
     <ul className="nav-links">
-    <Link to='/home'>Home</Link>
+    <Link to='/'>Home</Link>
     <Link to='/tourism'>Tourism</Link>
     <Link to='/fitness'>Fitness</Link>
     <Link to='/technology'>Technology</Link>
